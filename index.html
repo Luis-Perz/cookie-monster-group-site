@@ -62,7 +62,22 @@
             </div>
             <div class="team-hero-container">
                 <h1>¡Our Team!</h1>
-                <img class="team-picture" src="images/team/team1.jpg" alt="team-picture">
+
+                <!--Makes the image "clickable" so that when you click your face it takes you to your page-->
+                <img class="team-picture" src="images/team/team1.jpg" alt="team-picture" usemap="#teammap">
+
+                <map name="teammap">
+                    <!--Replace the "#" with the link to your github page "Getting to Know Me Page"-->
+
+                    <area shape="circle" coords="40,300,80" href="#" alt="Molly">
+
+                    <area shape="circle" coords="160,100,30" href="#" alt="Sadri">
+
+                    <area shape="circle" coords="280,100,30" href="https://kvillasenor.github.io/me/" alt="Karen">
+
+                    <area shape="circle" coords="380,180,30" href="#" alt="Luis">
+                </map>
+
             </div>
         </div>
         <div class="standard-container-title">

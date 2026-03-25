@@ -76,8 +76,8 @@ fetch('JSON/members.json')
                 <img class="card-img" src="${member.image}" alt="project-img"></img>
                 <div class="card-info">
                     <h1 class="card-name">${member.name}</h1>
-                    <p class="card-role">${member.name}</p>
-                    <a class="card-link" href="#">About Me</a>
+                    <p class="card-role">${member.role}</p>
+                    <a class="card-link" href="${member.link}">About Me</a>
                 </div>
             `;
             container.appendChild(card);
