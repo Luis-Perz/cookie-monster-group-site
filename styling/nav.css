@@ -46,12 +46,13 @@
     color: green;
 }
 .mobile-title{
-    height: 75px;
+    height: 80px;
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 .hidden-menu{
     background-color: #131316;

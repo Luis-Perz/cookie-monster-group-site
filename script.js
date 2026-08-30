@@ -8,21 +8,23 @@ hamMenu.addEventListener('click', () => {
     hamMenu.classList.toggle('active');
     if (!hiddenMenu.classList.toggle('active')){
         hiddenMenu.style.display = "none";
+        document.documentElement.style.overflowY = '';
     }else{
         hiddenMenu.style.display = "flex";
-        document.body.style.overflow = '';
+        document.documentElement.style.overflowY = 'hidden';
         navLink.forEach(link => link.addEventListener("click", () => {
             hiddenMenu.style.display = "none";
             hamMenu.classList.remove('active');
             hiddenMenu.classList.remove('active');
+            document.documentElement.style.overflowY = '';
         }))
         introContainer.addEventListener("click", () => {
-        hiddenMenu.style.display = "none";
-        hamMenu.classList.remove('active');
-        hiddenMenu.classList.remove('active');
+            hiddenMenu.style.display = "none";
+            hamMenu.classList.remove('active');
+            hiddenMenu.classList.remove('active');
+            document.documentElement.style.overflowY = '';
         })
     }
-
 });
 
 const scrollers = document.querySelectorAll(".scroller");
@@ -55,9 +57,10 @@ fetch('JSON/projects.json')
             card.innerHTML = `    
                 <img class="card-img" src="${project.image}" alt="project-img">
                 <div class="card-info">
+                
                     <h1 class="card-title">${project.title}</h1>
                     <p class="card-description">${project.description}</p>
-                    <a class="card-link" href="#">View Project</a>
+                    <a class="card-link" href="${project.link}">View Project</a>
                 </div>
             `;
         container.appendChild(card);
@@ -73,8 +76,9 @@ fetch('JSON/members.json')
             const card = document.createElement('div');
             card.className = 'item-card';
             card.innerHTML = `
-                <img class="card-img" src="${member.image}" alt="project-img"></img>
+                
                 <div class="card-info">
+                    <img class="card-img" src="${member.image}" alt="project-img">
                     <h1 class="card-name">${member.name}</h1>
                     <p class="card-role">${member.role}</p>
                     <a class="card-link" href="${member.link}">About Me</a>

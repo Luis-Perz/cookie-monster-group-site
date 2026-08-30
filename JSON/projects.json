@@ -1,9 +1,9 @@
 [
     {
-        "title": "null",
-        "description":"under construction",
-        "link":"#",
-        "image":"images/team/update.png"
+        "title": "Syllabye",
+        "description":"A portal designed to collect and organize syllabi based on school department",
+        "link":"https://syllabye-4a90d.web.app/",
+        "image":"images/syllabye-snapshot.png"
     }
 
 ]

@@ -12,15 +12,9 @@
     "link": "https://luis-perz.github.io/GettingToKnowEachOther/"
   },
   {
-    "name": "Karen",
+    "name": "",
     "role": "Developer",
-    "image": "images/team/karen-img.jpg",
-    "link": "https://kvillasenor.github.io/me/"
-  },
-  {
-    "name": "Sadri",
-    "role": "Developer",
-    "image": "images/team/Sadri.png",
-    "link": "https://sadriozgul.github.io/SadriOzgulWebgithub.io/"
+    "image": "",
+    "link": ""
   }
 ]

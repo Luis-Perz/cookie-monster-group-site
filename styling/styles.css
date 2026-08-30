@@ -13,7 +13,7 @@ a:hover{
     cursor: pointer;
 }
 body{
-    background-color: #131314;
+    background-color: #191919;
 }
 button:hover{
     cursor: pointer;
@@ -114,13 +114,14 @@ header{
     text-align: center;
     padding: 3rem 1rem 1rem;
 }
-.standard-container-title h1{
+.standard-container-title h1 {
     font-size: 60px;
     color: white;
 }
-#project, #member{
+
+ #member{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     gap: 2rem;
     padding: 10px;
 
@@ -143,24 +144,25 @@ header{
 
 .item-card{
     height: 450px;
-    width: 304px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    border: 1px solid white;
     box-shadow: 0 0 5px 5px dodgerblue;
 }
 .card-img{
     height: 300px;
     width: 300px;
+    overflow: hidden;
+    border-bottom: 2px solid #717171;
+    margin-bottom: 20px;
 }
 .card-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+
 }
 
 .card-title, .card-name{
@@ -169,6 +171,7 @@ header{
 
 .card-description, .card-role{
     color: grey;
+    text-align: center;
 }
 
 .card-link{
